@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    tools:context=".UpdateEmployeeActivity">
+
+
+    <TextView
+        android:id="@+id/SelectUser"
+        android:layout_width="143dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Employee"
+        android:textColor="@color/colorLoginButton"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/userTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView_Update"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/submit_Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SelectUser"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/SelectUserType"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:text="Select User Type"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/userTypeSpinner1"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/EMPCODE_Update"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DOB_Update" />
+
+            <TextView
+                android:id="@+id/JoiningDateText_Update"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="19dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SelectUserType" />
+
+            <EditText
+                android:id="@+id/AADHARCARD_Update"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PANCARD_Update" />
+
+
+            <EditText
+                android:id="@+id/PANCARD_Update"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EMPCODE_Update" />
+
+            <EditText
+                android:id="@+id/FIRST_NAME_Update"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="28dp"
+
+                android:layout_marginRight="28dp"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/JoiningDateUpdate" />
+
+            <EditText
+                android:id="@+id/PASSWORD_Update"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EMAIL_Update" />
+
+            <EditText
+                android:id="@+id/CONTACTNO_Update"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PASSWORD_Update" />
+
+            <EditText
+                android:id="@+id/EMAIL_Update"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LAST_NAME_Update" />
+
+            <EditText
+                android:id="@+id/LAST_NAME_Update"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FIRST_NAME_Update" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:text="Aadhar No."
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:text="PAN"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:text="Emp Code"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:text="Date Of Birth"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:text="Gender"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="142dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:text="Contact No."
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:text="Password"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:text="Last Name"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:text="Email"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:text="First Name"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:text="Joining Date "
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SelectUserType" />
+
+            <!-- <Button
+                 android:id="@+id/JoiningDate"
+                 android:layout_width="57dp"
+                 android:layout_height="41dp"
+
+                 android:layout_marginTop="16dp"
+                 android:background="@drawable/loginbutton_back"
+                 android:text="Set"
+                 android:textColor="@color/colorTextColor"
+                 app:layout_constraintStart_toEndOf="@+id/textView5"
+                 app:layout_constraintTop_toTopOf="parent" />-->
+
+            <ImageButton
+                android:id="@+id/JoiningDateUpdate"
+                android:layout_width="57dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_date_range_black_24dp"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/userTypeSpinner1">
+
+
+            </ImageButton>
+
+            <!--<Button
+                android:id="@+id/DOB"
+                android:layout_width="57dp"
+                android:layout_height="41dp"
+
+                android:layout_marginTop="20dp"
+                android:background="@drawable/loginbutton_back"
+                android:text="Set"
+                android:textColor="@color/colorTextColor"
+                app:layout_constraintStart_toEndOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />-->
+
+
+            <ImageButton
+                android:id="@+id/DOB_Update"
+
+                android:layout_width="57dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_date_range_black_24dp"
+
+                app:layout_constraintStart_toEndOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="28dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CONTACTNO_Update">
+
+                <RadioButton
+                    android:id="@+id/taskIndividual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/taskGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/radioOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Other" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/lblActiveEmp"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:text="Active Employee"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblSelectWarehouse" />
+
+            <CheckBox
+                android:id="@+id/checkBox_Update"
+                android:layout_width="37dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/selectedWarehouse" />
+
+            <TextView
+                android:id="@+id/tlname"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="16dp"
+                android:text="TL Name"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <Spinner
+                android:id="@+id/superUserSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AADHARCARD_Update" />
+
+            <TextView
+                android:id="@+id/lblSelectShift"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:text="Select Shift"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tlname" />
+
+            <Spinner
+                android:id="@+id/selectedShift"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/superUserSpinner" />
+
+            <TextView
+                android:id="@+id/lblSelectWarehouse"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:text="Warehouse"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblSelectShift" />
+
+            <EditText
+                android:id="@+id/selectedWarehouse"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="175dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:inputType="none"
+                android:enabled="false"
+                android:ems="10"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/selectedShift" />
+
+
+            <TextView
+                android:id="@+id/DOBtextUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
+    <Button
+        android:id="@+id/submit_Update"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@drawable/plane_button"
+        android:text="Submit"
+        android:textColor="@color/colorTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/resetPassword"
+        android:orderInCategory="100"
+        android:title="Change Password"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/logoutApp"
+        android:orderInCategory="105"
+        android:title="Logout"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/exportToExcel"
+        android:visible="false"
+        android:orderInCategory="105"
+        android:title="Download"
+        android:icon="@drawable/ic_arrow_downward_black_24dp"
+        app:showAsAction="always"
+        />
+
+</menu>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/assign"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_gradient">
+
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="30dp"
+                android:text="Task Type :"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerTaskType"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/textbox_back"
+
+                android:hint=" Select User"
+                android:padding="8dp"
+                android:spinnerMode="dropdown"
+                android:textColorHint="@color/colorHint"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+
+            <EditText
+                android:id="@+id/taskDesc"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_marginStart="30dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/textbox_back"
+                android:gravity="left"
+                android:hint="Task Description"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:padding="8dp"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerTaskType" />
+
+
+            <!--
+                <ListView
+
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical"
+                    android:textColor="@color/colorLoginButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:layout_constraintVertical_bias="0.241">
+
+
+
+                </ListView>-->
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:text="Select Product :"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSelectUser" />
+
+            <EditText
+                android:id="@+id/product"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/textbox_back"
+                android:hint="Product"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="@color/colorHint"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:text="Select Location :"
+                android:textColor="@color/colorLoginButton"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edExpctdTime" />
+
+            <!-- <Spinner
+                     android:id="@+id/spinnerWarehouse"
+                     android:layout_width="170dp"
+                     android:layout_height="41dp"
+                     android:layout_marginStart="30dp"
+                     android:background="@drawable/textbox_back"
+                     android:entries="@array/warehouse"
+                     android:padding="8dp"
+                     android:spinnerMode="dropdown"
+                     android:textColorHint="@color/colorHint"
+                     android:textSize="25dp"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toBottomOf="@+id/textView20" />-->
+
+            <EditText
+                android:id="@+id/spinnerWarehouse"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/textbox_back"
+
+                android:hint=""
+                android:padding="8dp"
+                android:spinnerMode="dropdown"
+                android:textColorHint="@color/colorHint"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <Spinner
+                android:id="@+id/spinnerRack"
+                android:layout_width="70dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="9dp"
+                android:background="@drawable/textbox_back"
+                android:entries="@array/array_rack"
+                android:hint=" Select User"
+                android:padding="8dp"
+                android:spinnerMode="dropdown"
+                android:textColorHint="@color/colorHint"
+                android:textSize="25dp"
+                app:layout_constraintStart_toEndOf="@+id/spinnerWarehouse"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+
+            <Spinner
+                android:id="@+id/spinnerLevel"
+                android:layout_width="70dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="9dp"
+                android:background="@drawable/textbox_back"
+                android:entries="@array/array_level"
+                android:padding="8dp"
+                android:spinnerMode="dropdown"
+                android:textColorHint="@color/colorHint"
+                android:textSize="25dp"
+                app:layout_constraintStart_toEndOf="@+id/spinnerRack"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <Spinner
+                android:id="@+id/spinnerBin"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginStart="9dp"
+                android:background="@drawable/textbox_back"
+                android:entries="@array/array_bin"
+                android:padding="8dp"
+                android:spinnerMode="dropdown"
+                android:textColorHint="@color/colorHint"
+                android:textSize="25dp"
+                app:layout_constraintStart_toEndOf="@+id/spinnerLevel"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerLevel"
+
+                >
+
+                <TableLayout
+                    android:id="@+id/tableabl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ABABAB"
+                        android:padding="1dip">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="User"
+                            android:textColor="@color/colorLoginButton" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Sub Task"
+                            android:textColor="@color/colorLoginButton" />
+
+
+                    </TableRow>
+
+                </TableLayout>
+            </ScrollView>
+
+            <RadioGroup
+                android:id="@+id/radioGrp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/taskDesc">
+
+                <RadioButton
+                    android:id="@+id/taskIndividual"
+                    android:layout_width="110dp"
+                    android:layout_height="41dp"
+                    android:text="Individual" />
+
+                <RadioButton
+                    android:id="@+id/taskGroup"
+                    android:layout_width="110dp"
+                    android:layout_height="41dp"
+                    android:text="Group Task" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:text="select user for :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/taskDesc" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="28dp"
+                android:text="Select User       :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <Button
+                android:id="@+id/btnSelectUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Select"
+                app:layout_constraintStart_toEndOf="@+id/textView22"
+                app:layout_constraintTop_toBottomOf="@+id/radioGrp" />
+
+            <TextView
+                android:id="@+id/lblExptdTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Expected Time     :"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/product" />
+
+            <TextView
+                android:id="@+id/lblInHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:text="In Hours"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/edExpctdTime"
+                app:layout_constraintTop_toBottomOf="@+id/product" />
+
+            <EditText
+                android:id="@+id/edExpctdTime"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/lblExptdTime"
+                app:layout_constraintTop_toBottomOf="@+id/product" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/assign"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@drawable/plane_button"
+        android:text="Assign"
+        android:textColor="@color/colorTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

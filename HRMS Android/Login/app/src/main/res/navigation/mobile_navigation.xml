@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_home"><!--Starting Navigation -->
+    <!--This is like Entry for all fragments -->
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.login.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/home_fragment"
+        />
+
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.example.login.ui.report.FragmentReport"
+        android:label="Report"
+        tools:layout="@layout/fragment_report"
+        />
+
+    <fragment
+        android:id="@+id/nav_timesheet"
+        android:name="com.example.login.ui.timesheet.timesheet"
+        android:label="@string/timesheet"
+        tools:layout="@layout/timesheet_fragment"
+        />
+
+    <fragment
+        android:id="@+id/nav_user_management"
+        android:name="com.example.login.ui.user_management.UserManagementFragment"
+        android:label="@string/user_management"
+        tools:layout="@layout/fragment_user_management"
+        />
+
+    <fragment
+        android:id="@+id/nav_scanproduct"
+        android:name="com.example.login.ui.scan_product.ScanProductFragment"
+        android:label="Scan Product"
+        tools:layout="@layout/scan_product_fragment"
+        />
+
+
+
+</navigation>

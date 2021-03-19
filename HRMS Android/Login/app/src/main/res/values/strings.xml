@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">Mahindra Logistics</string>
+    <!--    <string name="app_name">UCS HRMS</string>-->
+
+    <string-array name="array_year">
+        <item>Select</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+    </string-array>
+
+    <string-array name="array_month">
+        <item>Select</item>
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JULY</item>
+        <item>AUG</item>
+        <item>SEPT</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DEC</item>
+    </string-array>
+
+    <string-array name="array_rack">
+        <item>RACK</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+
+    </string-array>
+
+    <string-array name="array_level">
+        <item>LEVEL</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="array_bin">
+        <item>BIN</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+
+
+
+
+
+
+    <string-array name="asset_status">
+        <item>Select</item>
+        <item>Available</item>
+        <item>Damaged</item>
+
+    </string-array>
+
+    <string-array name="is_active">
+        <item>Select</item>
+        <item>Yes</item>
+        <item>No</item>
+
+    </string-array>
+
+
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="timesheet">Timesheet</string>
+    <string name="home">Home</string>
+    <string name="addUser">Add User</string>
+    <string name="addEmp">Add Employee</string>
+    <string name="addTl">Add Team Leader (TL)</string>
+    <string name="submit">SUBMIT</string>
+
+    <string name="apply_leave">Apply Leave</string>
+    <string name="leave_request_list">Leave Request</string>
+    <string name="leave_request_details">Leave Request Details</string>
+    <string name="user_management">User Management</string>
+    <!--    <string name="spinner_title">Category</string>-->
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_table">Table Activity</string>
+    <string name="leave_tracker">Leave Tracker</string>
+    <string name="update_Emp_Details">Update Employee Details</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    tools:context=".LeaveRequestDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="120dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="53dp"
+            android:text="Comments :"
+            android:textColor="@color/colorLoginButton"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="120dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="81dp"
+        android:text="Approved :"
+        android:textColor="@color/colorLoginButton"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="120dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="28dp"
+            android:text="No. of Days :"
+            android:textColor="@color/colorLoginButton"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="120dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:text="To Date :"
+        android:textColor="@color/colorLoginButton"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <!--   <TextView
+           android:id="@+id/textView7"
+           android:layout_width="53dp"
+           android:layout_height="26dp"
+           android:layout_marginStart="100dp"
+           android:layout_marginLeft="100dp"
+           android:layout_marginTop="112dp"
+           android:text="Name :"
+           android:textColor="@color/colorLoginButton"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <TextView
+        android:id="@+id/ToDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/colorLoginButton"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/FromDateText" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="120dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Name :"
+        android:textColor="@color/colorLoginButton"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/colorLoginButton"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="120dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:text="From Date :"
+        android:textColor="@color/colorLoginButton"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/FromDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/colorLoginButton"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/loginbutton_back"
+        android:text="Submit"
+        android:textColor="@color/colorTextColor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ApproverSpinner" />
+
+    <TextView
+        android:id="@+id/LeaveCount"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/colorLoginButton"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/ToDateText" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="120dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Reason :"
+        android:textColor="@color/colorLoginButton"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+
+    <TextView
+        android:id="@+id/Reason"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_marginStart="148dp"
+
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:textColor="@color/colorLoginButton"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LeaveCount" />
+
+        <EditText
+            android:id="@+id/Comments"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginEnd="77dp"
+            android:layout_marginRight="77dp"
+            android:background="@drawable/textbox_back"
+            android:gravity="left"
+            android:hint="Comments"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLength="50"
+            android:padding="8dp"
+            android:textColorHint="@color/colorHint"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Reason" />
+
+        <Spinner
+            android:id="@+id/ApproverSpinner"
+            android:layout_width="143dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="22dp"
+
+
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/Comments" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

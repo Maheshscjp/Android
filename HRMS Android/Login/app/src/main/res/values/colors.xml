@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>-->
+   <!-- <color name="colorPrimary">#D81B60</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>-->
+    <!--<color name="colorPrimary">#E06F6F</color>
+    <color name="colorPrimaryDark">#E06F6F</color>
+    <color name="colorTextBoxBack">#FFFFFF</color>
+    <color name="colorAccent">#BD023C</color>
+    <color name="colorHint">#c3acacac</color>
+    <color name="colorLoginButton">#020202</color>
+    <color name="colorLoginInput">#020202</color>
+    <color name="colorTextColor">#FFFFFF</color>
+-->
+
+    <color name="colorPrimary">#E06F6F</color>
+    <color name="colorPrimaryDark">#E06F6F</color>
+    <color name="colorTextBoxBack">#FFFFFF</color>
+    <color name="colorAccent">#BD023C</color>
+    <color name="colorHint">#c3acacac</color>
+    <color name="colorLoginButton">#020202</color>
+    <color name="colorTextColor">#F0D2D2</color>
+<!--    <color name="colorBackground">#FFFFFF</color>-->
+
+
+</resources>

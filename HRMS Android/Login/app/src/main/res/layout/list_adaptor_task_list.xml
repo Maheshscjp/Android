@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:descendantFocusability="blocksDescendants" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <TextView
+            android:id="@+id/tvTaskCode"
+            android:layout_width="50dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="25"
+            android:text="tv"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TvTaskType"
+            android:layout_width="70dp"
+            android:layout_height="37dp"
+            android:text="tv"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/tvTaskCode"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TvTaskAltType"
+            android:layout_width="90dp"
+            android:layout_height="37dp"
+            android:layout_weight="25"
+            android:text="TextView"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/TvTaskType"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="80dp"
+            android:layout_height="37dp"
+            android:text="TextView"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/TvTaskAltType"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnPlayPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/ic_btn_pause"
+            app:layout_constraintStart_toEndOf="@+id/tvStatus"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/ic_btn_complete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btnPlayPause"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
